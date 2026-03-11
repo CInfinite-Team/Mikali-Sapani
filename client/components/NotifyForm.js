@@ -47,9 +47,11 @@ export default function NotifyForm() {
       <button
         type="submit"
         disabled={loading}
-        className="h-12 w-full sm:w-auto min-w-[140px] rounded-none border border-neutral-900 bg-neutral-900 px-6 text-xs font-medium tracking-widest text-white uppercase transition-all hover:bg-neutral-800 hover:text-white disabled:opacity-50"
+        className="btn-17 h-12 w-full sm:w-auto min-w-[140px] rounded-none border rounded-r-sm! border-black bg-black px-6 text-xs! font-medium tracking-widest text-white uppercase transition-all disabled:opacity-50"
       >
-        {loading ? "Submitting..." : "Notify Me"}
+        <span className="text-container">
+          <span className="text">{loading ? "Submitting..." : "Notify Me"}</span>
+        </span>
       </button>
     </form>
   );
