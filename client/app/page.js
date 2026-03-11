@@ -1,22 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import NotifyForm from "../components/NotifyForm";
 
 export default function ComingSoon() {
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (email) {
-      // Simulate subscription
-      setSubscribed(true);
-      setTimeout(() => setSubscribed(false), 5000);
-      setEmail("");
-    }
-  };
-
   return (
     <div className="flex min-h-[100dvh] flex-col items-center justify-center bg-background px-6 py-12 font-sans text-neutral-900 selection:bg-neutral-200">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent opacity-50"></div>
@@ -47,28 +34,7 @@ export default function ComingSoon() {
 
         {/* Subscription Form */}
         <div className="w-full max-w-md">
-          {subscribed ? (
-            <div className="flex h-12 w-full items-center justify-center rounded-none border border-green-800 bg-green-50 text-xs tracking-widest text-green-900 uppercase animate-fade-in">
-              Thank you for subscribing.
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 sm:gap-0">
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email address"
-                className="h-12 w-full rounded-none border border-neutral-300 bg-transparent px-4 text-sm outline-none transition-colors placeholder:text-neutral-400 focus:border-neutral-900 focus:ring-1 focus:ring-neutral-900 sm:border-r-0"
-              />
-              <button
-                type="submit"
-                className="h-12 w-full sm:w-auto min-w-[140px] rounded-none border border-neutral-900 bg-neutral-900 px-6 text-xs font-medium tracking-widest text-white uppercase transition-all hover:bg-neutral-800 hover:text-white"
-              >
-                Notify Me
-              </button>
-            </form>
-          )}
+          <NotifyForm />
         </div>
       </main>
 
