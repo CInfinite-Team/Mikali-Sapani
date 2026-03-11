@@ -60,6 +60,7 @@ body {
   width: 100%;
   height: 100%;
   mix-blend-mode: difference;
+  /* Since button is white, difference creates black text. When pseudo element slides in (which we need to change to black), difference creates white text */
   color: #fff;
   z-index: 10;
 }
@@ -83,7 +84,7 @@ body {
 .btn-17:after,
 .btn-17:before {
   --skew: -2.8;
-  background: #fff;
+  background: #ffff; /* Change slide-in to black */
   content: "";
   display: block;   
   height: 102%;

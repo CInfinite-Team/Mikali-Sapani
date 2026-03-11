@@ -42,12 +42,12 @@ export default function NotifyForm() {
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Enter your email address"
         disabled={loading}
-        className="h-12 w-full rounded-none border border-neutral-300 bg-transparent px-4 text-sm outline-none transition-colors placeholder:text-neutral-400 focus:border-neutral-900 focus:ring-1 focus:ring-neutral-900 sm:border-r-0 disabled:opacity-50"
+        className="h-12 w-full rounded-none border backdrop-blur-xs border-white/30 bg-black/20 px-4 text-sm outline-none transition-colors text-white placeholder:text-white/60 focus:border-white  sm:border-r-0 disabled:opacity-50"
       />
       <button
         type="submit"
         disabled={loading}
-        className="btn-17 h-12 w-full sm:w-auto min-w-[140px] rounded-none border rounded-r-sm! border-black bg-black px-6 text-xs! font-medium tracking-widest text-white uppercase transition-all disabled:opacity-50"
+        className="btn-17 h-12 w-full cursor-pointer sm:w-auto min-w-[140px] rounded-none border rounded-r-sm! border-white/30 hover:border-white border-l-white/30 border-l-0 bg-black px-6 text-xs! font-medium tracking-widest text-black uppercase transition-all disabled:opacity-50"
       >
         <span className="text-container">
           <span className="text">{loading ? "Submitting..." : "Notify Me"}</span>
