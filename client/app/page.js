@@ -38,7 +38,7 @@ export default function ComingSoon() {
         </h1>
 
         {/* Description */}
-        <p className="mb-12 max-w-xl text-sm leading-relaxed text-neutral-200 sm:text-base">
+        <p className="mb-12 flex max-w-xl text-sm leading-relaxed text-neutral-200 sm:text-base">
           For the strong, modern woman who is bold, passionate, and spirited. We are merging 
           tradition with contemporary luxury, nurturing a commitment to sustainability and empowerment. 
           The Spirit of Africa, redefined.
@@ -53,7 +53,7 @@ export default function ComingSoon() {
       {/* Footer */}
       <footer className="absolute bottom-8 w-full text-center animate-fade-in z-10" style={{ animationDelay: '0.5s' }}>
         <p className="text-[10px] tracking-widest text-neutral-100 uppercase">
-          © {new Date().getFullYear()} Mikali Sapani. All rights reserved.
+          © {new Date().getFullYear()} Mikali Sapani. All rights reserved. Designed &Developedb by <a href="luxury-method.com" > Luxury Method</a>
         </p>
       </footer>
     </div>
