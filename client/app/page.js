@@ -53,7 +53,7 @@ export default function ComingSoon() {
       {/* Footer */}
       <footer className="absolute bottom-8 w-full text-center animate-fade-in z-10" style={{ animationDelay: '0.5s' }}>
         <p className="text-[10px] tracking-widest text-neutral-100 uppercase">
-          © {new Date().getFullYear()} Mikali Sapani. All rights reserved. Designed &Developedb by <a href="https://www.luxury-method.com/" > Luxury Method</a>
+          © {new Date().getFullYear()} Mikali Sapani. All rights reserved. Designed & Developedb by <a href="https://www.luxury-method.com/" > Luxury Method</a>
         </p>
       </footer>
     </div>
